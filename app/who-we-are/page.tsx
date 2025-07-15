@@ -84,6 +84,32 @@ export default function WhoWeArePage() {
               />
             
           </div>
+
+          {/* Profile 4 */}
+          <div className="flex justify-center">
+            
+              <Image
+                src="/images/woochan.png"
+                alt="Woochan Profile"
+                width={800}
+                height={300}
+                className="w-full max-w-4xl h-auto"
+              />
+            
+          </div>
+
+          {/* Profile 5 */}
+          <div className="flex justify-center">
+            <Link href="https://sangjune-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer" className="cursor-pointer transition-transform hover:scale-105">
+              <Image
+                src="/images/sangjune.png"
+                alt="Sangjune Profile"
+                width={800}
+                height={300}
+                className="w-full max-w-4xl h-auto"
+              />
+            </Link>
+          </div>
         </div>
 
         {/* Company Vision Section */}
