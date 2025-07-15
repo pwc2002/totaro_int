@@ -45,7 +45,7 @@ export function Navbar({ onLoginClick, currentPage, showBorder = false }: Navbar
             href="/esg-dashboard" 
             className={getLinkClassName("esg-dashboard")}
           >
-            ESG 자가진단
+            ESG
           </Link>
           
           <Link 

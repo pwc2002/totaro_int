@@ -48,35 +48,41 @@ export default function WhoWeArePage() {
         <div className="mb-16 space-y-8">
           {/* Profile 1 */}
           <div className="flex justify-center">
-            <Image
-              src="/images/profile1.png"
-              alt="Designer - 남은 순간 이상하게, 쓰는 순간 부드럽게"
-              width={800}
-              height={300}
-              className="w-full max-w-4xl h-auto"
-            />
+            
+              <Image
+                src="/images/junbin.png"
+                alt="Designer - 남은 순간 이상하게, 쓰는 순간 부드럽게"
+                width={800}
+                height={300}
+                className="w-full max-w-4xl h-auto"
+              />
+            
           </div>
           
           {/* Profile 2 */}
           <div className="flex justify-center">
-            <Image
-              src="/images/profile2.png"
-              alt="Developer - 기능은 정확하게, 화풀는 몸짓 없이"
-              width={800}
-              height={300}
-              className="w-full max-w-4xl h-auto"
-            />
+            <Link href="https://www.songseungju.dev/" target="_blank" rel="noopener noreferrer" className="cursor-pointer transition-transform hover:scale-105">
+              <Image
+                src="/images/seungju.png"
+                alt="Developer - 기능은 정확하게, 화풀는 몸짓 없이"
+                width={800}
+                height={300}
+                className="w-full max-w-4xl h-auto"
+              />
+            </Link>
           </div>
           
           {/* Profile 3 */}
           <div className="flex justify-center">
-            <Image
-              src="/images/profile33.png"
-              alt="Product - 프로젝트에 잠든 구죽, 개월은 이미 시작입니다"
-              width={800}
-              height={300}
-              className="w-full max-w-4xl h-auto"
-            />
+            
+              <Image
+                src="/images/taejun.png"
+                alt="Product - 프로젝트에 잠든 구죽, 개월은 이미 시작입니다"
+                width={800}
+                height={300}
+                className="w-full max-w-4xl h-auto"
+              />
+            
           </div>
         </div>
 

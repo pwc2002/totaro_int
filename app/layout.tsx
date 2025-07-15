@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Totaro Int.',
+  title: 'Act Finder',
   description: '',
   generator: 'v0.dev',
   icons: {

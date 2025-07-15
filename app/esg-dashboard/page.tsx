@@ -1,12 +1,17 @@
 'use client'
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Navbar } from "@/components/nav/navbar"
 import { LoginModal } from "@/components/login-modal"
 import EsgRadar from '@/components/EsgRadar'
 import BenchmarkBar from '@/components/BenchmarkBar'
 import RoadmapTimeline from '@/components/RoadmapTimeline'
+import GraphPage from './graphPage'
 import { EsgScore, Benchmark, RoadmapItem } from '@/types/esg'
+
+
+
+
 
 // 글로우프로덕션 실제 ESG 자가진단 결과 데이터
 const esgScores: EsgScore[] = [
@@ -126,37 +131,14 @@ export default function Page() {
       <div className="min-h-screen bg-white p-4 md:p-12">
         <div className="max-w-6xl mx-auto space-y-12">
           
-          {/* ACTFINDER 서비스 설명 */}
-          <div className="bg-white rounded-lg p-8 md:p-12">
-            <div className="text-center space-y-6">
-              <h2 className="text-2xl md:text-3xl font-medium text-gray-800">
-                ESG 보고서 대시보드 솔루션
-              </h2>
-              
-              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                ACTFINDER가 ESG 보고서 데이터를 분석하여<br />
-                직관적인 대시보드로 시각화해 드립니다
-              </p>
-              
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4">
-                <div className="bg-white rounded-lg p-6">
-                  <h4 className="font-medium text-gray-800 mb-2">보고서 분석</h4>
-                  <p className="text-sm text-gray-600">ESG 데이터 자동 추출 및 분류</p>
-                </div>
-                <div className="bg-white rounded-lg p-6">
-                  <h4 className="font-medium text-gray-800 mb-2">시각화 대시보드</h4>
-                  <p className="text-sm text-gray-600">차트와 그래프로 쉬운 이해</p>
-                </div>
-                <div className="bg-white rounded-lg p-6">
-                  <h4 className="font-medium text-gray-800 mb-2">인사이트 제공</h4>
-                  <p className="text-sm text-gray-600">업계 벤치마크 및 개선점 도출</p>
-                </div>
-              </div>
-            </div>
-          </div>
+          {/* ACTFINDER 서비스 설명 with 그래프 슬라이딩 배경 */}
+          <GraphPage />
+
+          {/* 구분선 */}
+          <div className="border-t border-gray-200"></div>
 
           {/* ESG 금융 혜택 정보 */}
-                      <div className="space-y-6 bg-white p-8 rounded-lg">
+          <div className="space-y-6 bg-white p-8 rounded-lg">
             <div className="text-center space-y-4">
               <h2 className="text-2xl font-medium text-gray-800">ESG 우수기업 금융 혜택</h2>
               <p className="text-gray-600 max-w-2xl mx-auto">
@@ -209,6 +191,9 @@ export default function Page() {
             </div>
           </div>
 
+          {/* 구분선 */}
+          <div className="border-t border-gray-200"></div>
+
           {/* 헤더 & 종합 결과 통합 */}
           <div className="text-center space-y-8">
             <div className="space-y-4">
@@ -243,6 +228,9 @@ export default function Page() {
               </div>
             </div>
           </div>
+
+          {/* 구분선 */}
+          <div className="border-t border-gray-200"></div>
 
           {/* 예시 ESG 대시보드 */}
           <div className="space-y-10">
@@ -302,6 +290,9 @@ export default function Page() {
               </div>
             </div>
 
+            {/* 구분선 */}
+            <div className="border-t border-gray-200 my-10"></div>
+
             {/* ESG 개선 로드맵 */}
             <div className="space-y-6">
               <div className="text-center space-y-4">
@@ -313,6 +304,9 @@ export default function Page() {
               <RoadmapTimeline data={roadmapData} />
             </div>
           </div>
+
+          {/* 구분선 */}
+          <div className="border-t border-gray-200"></div>
 
           {/* 푸터 */}
           <div className="text-center space-y-3 pt-12 pb-8 border-t border-gray-200">
