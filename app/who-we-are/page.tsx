@@ -95,6 +95,7 @@ export default function WhoWeArePage() {
                 height={300}
                 className="w-full max-w-4xl h-auto"
               />
+            </Link>
             
           </div>
 
