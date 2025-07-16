@@ -74,7 +74,7 @@ export default function WhoWeArePage() {
           
           {/* Profile 3 */}
           <div className="flex justify-center">
-            
+            <Link href="https://v0-portfolio-website-chi-bay.vercel.app/" target="_blank" rel="noopener noreferrer" className="cursor-pointer transition-transform hover:scale-105">
               <Image
                 src="/images/taejun.png"
                 alt="Product - 프로젝트에 잠든 구죽, 개월은 이미 시작입니다"
@@ -82,7 +82,7 @@ export default function WhoWeArePage() {
                 height={300}
                 className="w-full max-w-4xl h-auto"
               />
-            
+            </Link>
           </div>
 
           {/* Profile 4 */}
