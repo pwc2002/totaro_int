@@ -102,7 +102,7 @@ export default function WhoWeArePage() {
           <div className="flex justify-center">
             <Link href="https://sangjune-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer" className="cursor-pointer transition-transform hover:scale-105">
               <Image
-                src="/images/sangjune.png"
+                src="/images/sangjune2.png"
                 alt="Sangjune Profile"
                 width={800}
                 height={300}
