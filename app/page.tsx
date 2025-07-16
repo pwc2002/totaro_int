@@ -28,8 +28,8 @@ export default function HomePage() {
         </div>
 
         {/* Content */}
-        <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-12 leading-tight">
+        <div className="relative z-10 text-center px-6 mx-auto">
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-12 !leading-tight">
             당신의 상상력을 자극할 수십개의 아이디어
             <br />
             지금 만나보세요
