@@ -122,7 +122,7 @@ export default function ContactPage() {
     {
       name: '강우석',
       role: '이벤트 플래너',
-      avatar: '/images/profile3.png'
+      avatar: '/images/kangwoo.png'
     }
   ]
 
@@ -291,8 +291,18 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {teamMembers.map((member, index) => (
               <div key={index} className="bg-white rounded-xl shadow-sm border border-gray-200 p-6 text-center">
-                <div className="w-20 h-20 bg-gray-200 rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <div className="w-16 h-16 bg-gray-300 rounded-full"></div>
+                <div className="w-20 h-20 bg-gray-200 rounded-full mx-auto mb-4 flex items-center justify-center overflow-hidden">
+                  {member.name === '강우석' ? (
+                    <Image
+                      src={member.avatar}
+                      alt={member.name}
+                      width={80}
+                      height={80}
+                      className="w-full h-full object-cover rounded-full"
+                    />
+                  ) : (
+                    <div className="w-16 h-16 bg-gray-300 rounded-full"></div>
+                  )}
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-1">{member.name}</h3>
                 <p className="text-sm text-gray-600 mb-4">{member.role}</p>
