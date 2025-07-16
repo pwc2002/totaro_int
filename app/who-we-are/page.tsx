@@ -87,7 +87,7 @@ export default function WhoWeArePage() {
 
           {/* Profile 4 */}
           <div className="flex justify-center">
-            
+            <Link href="https://woochan-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer" className="cursor-pointer transition-transform hover:scale-105">
               <Image
                 src="/images/woochan.png"
                 alt="Woochan Profile"
