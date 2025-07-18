@@ -48,7 +48,7 @@ export default function WhoWeArePage() {
         <div className="mb-16 space-y-8">
           {/* Profile 1 */}
           <div className="flex justify-center">
-            
+            <Link href="https://v0-portfoliothefstack-gules-psi.vercel.app/" target="_blank" rel="noopener noreferrer" className="cursor-pointer transition-transform hover:scale-105">
               <Image
                 src="/images/junbin.png"
                 alt="Designer - 남은 순간 이상하게, 쓰는 순간 부드럽게"
@@ -56,7 +56,7 @@ export default function WhoWeArePage() {
                 height={300}
                 className="w-full max-w-4xl h-auto"
               />
-            
+            </Link>
           </div>
           
           {/* Profile 2 */}
